@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    overflow-y: hidden;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    padding: 20px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 530px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    border-radius: 20px;
+}
+.imagem-card {
+    padding-bottom: 10px;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+.animation-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: 299px;
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0;
+    transition: all 0.3 ease-out;
+}
+.animation-imagem img {
+    width: 25%;
+    height: 25%;
+}
+.animation-imagem:hover {
+    opacity: 1;
+}
+.texto a {
+    text-decoration: none;
+}
+.texto a h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+.texto-alinhado {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.texto h1 {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 6px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 3px;
+}
+.texto p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    padding: 5px;
+}
+.texto-lado-a-lado {
+    display: flex;
+    justify-content: space-between;
+}
+.texto-lado-a-lado .direita {
+    margin-right: 10px;
+}
+.esquerda {
+    color: hsl(178, 100%, 50%);
+    margin-top: 3px;
+    font-weight: 600;
+}
+.esquerda img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.direita {
+    color: hsl(215, 51%, 70%);
+    margin-top: 10px;
+}
+.direita img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.borda {
+    background-color: hsl(215, 32%, 27%);
+    width: 325px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.autor {
+    display: flex;
+    margin-left: 20px;
+}
+.autor img {
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+.autor p {
+    margin-top: 5px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+}
+.autor a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+}
+.autor a:hover {
+    color: hsl(178, 100%, 50%);
+}
+footer {
+    margin-top: 10px;
+}
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
